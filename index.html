@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LookAfter | Revenue Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            void: '#F2F0E9',
+            graphite: '#181817',
+            acid: '#D4FF00',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            mono: ['"Space Mono"', 'monospace'],
+            sans: ['"Space Mono"', 'sans-serif'], // Defaulting sans to mono for this specific vibe
+          },
+          cursor: {
+            none: 'none',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Hide default cursor for the custom cursor implementation */
+    body {
+      cursor: none;
+    }
+
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar to match aesthetic */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F2F0E9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #181817;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4FF00;
+    }
+
+    /* Dark Mode Scrollbar */
+    .dark ::-webkit-scrollbar-track {
+      background: #181817;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #F2F0E9;
+    }
+
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #D4FF00;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-void text-graphite overflow-x-hidden antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
